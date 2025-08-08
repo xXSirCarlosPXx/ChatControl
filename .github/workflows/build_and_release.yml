@@ -2,8 +2,9 @@ name: Build and Release ChatControl for Velocity and Purpur with GraalVM 24
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
